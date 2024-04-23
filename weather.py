@@ -21,9 +21,7 @@ def get_weather():
     return jsonify({
         'city': data['name'],
         'temperature': data['main']['temp'],
-        'description': data['weather'][0]['description'],
-        'wind_speed': data['wind']['speed'],  # Добавляем данные о скорости ветра
-        'humidity': data['main']['humidity']  # Добавляем данные о влажности
+        'description': data['weather'][0]['description']
     })
 
 if __name__ == '__main__':
