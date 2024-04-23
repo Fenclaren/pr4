@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t your_docker_username/weather-app:latest .
+      run: docker build -t fenclaren1/weather-app:latest .
 
     - name: Push Docker image
-      run: docker push your_docker_username/weather-app:latest
+      run: docker push fenclaren1/weather-app:latest
